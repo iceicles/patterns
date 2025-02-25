@@ -1,0 +1,11 @@
+Singleton
+----------
+
+Classes which can be instantiated once, and can be accessed globally.
+This single instance can be shared throughout our application, which makes Singletons great for managing global state in an aplication.
+
+When we invoke the increment method in either redButton.js or blueButton.js, the value of the counter property on the Counter instance updates in both files. It doesn't matter whether we click on the red or blue button -- the same value is shared among all instances. This is why the counter keeps incrementing by one, even though we're invoking the method in different files!
+
+Singletons are considered an anti-pattern, and can (or.. should) be avoided in JavaScript due to a lot of unexpected behaviors with different scripts sharing the same instance.
+
+The common usecase for a Singleton is to have some sort of global state throughout your application. In react, global state management tools such as Redux or React Context might seem similar to that of a Singleton, but these tools provide a read-only state rather than the mutable state of the Singleton. And the only way to update state is by sending a dispatcher. This ensures we the global state is mutated the way we intend it, since components cannot update the state directly.
