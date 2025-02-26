@@ -1,0 +1,12 @@
+Prototype
+---------
+
+The prototype pattern is a useful wsay to share properties among many objects of the same type.
+
+When using ES6 clases, all properties that are defined on the class itself, (bark in the Dog class example), are automatically added to the prototype.
+
+Whenever we try to access a property on an object that doesn't exist on the object directly, JavaScript will go down the prototype chain to see if the property is available within the prototype chain.
+
+The term prototype chain indicates that there could be more than one step. Prototypes themselves also have a __proto__ object.
+
+The prototype pattern allows us to easily let objects access and inherit properties from other objects. SInce the prototype chain allows us to access properties that aren't directly defined on the object itself, we can avoid duplication of methods and properties, thus reducing the amount of memory used.
