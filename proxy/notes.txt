@@ -7,5 +7,3 @@ With a Proxy object, we get more control over the interactions with certain obje
 A proxy objectr can determine the behavior whenever we're interacting with the object, for example when we're getting a value, or setting a value.
 
 As the name suggests, instead of interacting with the target object directly, we'll interact with the Proxy object.
-
-This is helpful because if we have a global object that is being used by multiple functions/components/whatever, if a function utlizies proxy by changing properties on the global object, the other functions will not be affected.
