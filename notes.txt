@@ -1,3 +1,4 @@
 Learning JS & React patterns
 - Singleton
 - Proxy
+- Observer

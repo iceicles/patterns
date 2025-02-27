@@ -1,0 +1,12 @@
+Observer
+--------
+
+Use observables to notify subscribers when an event occurs.
+
+With the observer pattern, we can subscribe certain objects (the observers), to another object, called the observable. In our example, logger and eventData are the observers. When an event occurs, the observable notified ALL its observers!
+
+Observer pattern can be very useful when working with async, event-based data. Maybe you want certain components to get notified whenever certain data has finished downloading, or whenever users sent new messages to a message board and all other members should get notified.
+
+Note/con: if an observer becomes too complex, it may cause performance issues when notifying all subscribers.
+
+A popular library that uses the observable pattern (& iterator pattern) is RxJS.
